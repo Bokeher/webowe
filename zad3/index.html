@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* html{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        } */
+        #zdjecia, #zdjecie{
+            width: 100%;
+            text-align: center;
+        }
+        /* #zdjecia{
+            height: 50%;
+        }
+        #zdjecie{
+            height: 50%;
+        } */
+        
+        .gablota{
+            width: 16%;
+        }
+        .zmiana{
+            /* border: none; */
+            /* background-color: red; */
+            height: 100%;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="zdjecia">
+        <img src="images/zdj1.jpg" alt="zdj1" class="gablota">
+        <img src="images/zdj2.jpg" alt="zdj2" class="gablota">
+        <img src="images/zdj3.jpg" alt="zdj3" class="gablota">
+        <img src="images/zdj4.jpg" alt="zdj4" class="gablota">
+        <img src="images/zdj5.jpg" alt="zdj5" class="gablota">
+        <img src="images/zdj6.jpg" alt="zdj6" class="gablota">
+    </div>
+    <div id="zdjecie" hidden>
+        <img src="images/zdj1.jpg" alt="zdjecie" id="wybraneZdjecie">
+        <div id="zmienianie">
+            <button id="lewo" class="zmiana"><--</button>
+            <button id="zamkniecie" class="zmiana">Zamknij</button>
+            <button id="prawo" class="zmiana">--></button>
+        </div>
+    </div>
+    <script src="libs/jQuery.js"></script>
+    <script src="libs/jQuery_UI.js"></script>
+    <!-- <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <script src="script.js"></script>
+</body>
+</html>
