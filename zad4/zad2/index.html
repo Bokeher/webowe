@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #afafaf;
+        }
+        .boxes{
+            width: 50px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+        }
+        #Bblue {
+            background-color: blue;
+        }
+        #Bblack {
+            background-color: black;
+        }
+        #Bgreen {
+            background-color: green;
+        }
+        #Bwhite {
+            background-color: white;
+        }
+        #Bred {
+            background-color: red;
+        }
+    </style>
+    <script src="../../jQuery.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <label for="blue"><input type="checkbox" name="color" id="blue" class="checkBoxes">niebieski</label> <br>
+    <label for="black"><input type="checkbox" name="color" id="black" class="checkBoxes">czarny</label> <br>
+    <label for="green"><input type="checkbox" name="color" id="green" class="checkBoxes">zielony</label> <br>
+    <label for="white"><input type="checkbox" name="color" id="white" class="checkBoxes">biały</label> <br>
+    <label for="red"><input type="checkbox" name="color" id="red" class="checkBoxes">czerwony</label> <br>
+
+    <h4>
+        Zaznaczono <span id="selectedCounter">0 pól</span>
+    </h4>
+
+    <div id="colors">
+        
+    </div>
+<!-- ◯ -->
+</body>
+</html>

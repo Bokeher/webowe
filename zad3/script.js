@@ -8,11 +8,12 @@ $(document).ready(function() {
         "zdj6.jpg"
     ];
 
+    // on click shake
     $(".gablota").on("click", function() {
         $(this).effect("shake");
-        // shake
     });
 
+    // on dblclick change img
     $(".gablota").on("dblclick", function() {
         if($("#zdjecie").is(":hidden")) $("#zdjecie").slideDown();
 
@@ -20,7 +21,12 @@ $(document).ready(function() {
         $("#wybraneZdjecie").attr("src", clickedImageSrc);
     });
 
+    // close 
     $("#zamkniecie").on("click", () => {
+        $("#zdjecie").slideUp();
+    });
+    // close 
+    $("#disabling").on("click", () => {
         $("#zdjecie").slideUp();
     });
 
@@ -33,6 +39,7 @@ $(document).ready(function() {
         changeImage(true);
     });
 
+    // function for changing images (1 to right / 1 to left)
     function changeImage(right) {
         const currSrc = $("#wybraneZdjecie").attr("src");
         let i = 0;
@@ -45,8 +52,8 @@ $(document).ready(function() {
         return setImg(i-1);
     }
 
+    // set src of img 
     function setImg(i) {
-        console.log(i);
         const leng = imgSrcs.length;
         if(i == leng) i = 0;
         if(i == -1) i = leng - 1;

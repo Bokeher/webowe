@@ -6,29 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* html{
-            height: 100%;
-            width: 100%;
-            margin: 0;
-        } */
         #zdjecia, #zdjecie{
             width: 100%;
             text-align: center;
         }
-        /* #zdjecia{
-            height: 50%;
-        }
-        #zdjecie{
-            height: 50%;
-        } */
-        
         .gablota{
             width: 16%;
         }
         .zmiana{
-            /* border: none; */
-            /* background-color: red; */
             height: 100%;
+        }
+        #wybraneZdjecie {
+            position: relative;
+            top: 0;
+
+        }
+        #disabling {
+            position: absolute;
+            width: 50px;
+        }
+
+        #parent {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        #wybraneZdjecie {
+            position: relative;
+            top: 0;
+            left: 0;
+            /* border: 1px red solid; */
+        }
+        #disabling {
+            /* text-align: center; */
+            position: absolute;
+            top: 540px;
+            left: 48.3%;
+            /* border: 1px green solid; */
         }
     </style>
 
@@ -43,17 +57,19 @@
         <img src="images/zdj6.jpg" alt="zdj6" class="gablota">
     </div>
     <div id="zdjecie" hidden>
-        <img src="images/zdj1.jpg" alt="zdjecie" id="wybraneZdjecie">
+        <div id="parent">
+            <img src="images/zdj1.jpg" alt="zdjecie" id="wybraneZdjecie">
+            <img src="images/X.png" alt="" id="disabling">
+
+        </div>
         <div id="zmienianie">
-            <button id="lewo" class="zmiana"><--</button>
-            <button id="zamkniecie" class="zmiana">Zamknij</button>
-            <button id="prawo" class="zmiana">--></button>
+            <button id="lewo" class="zmiana"><-- Poprzedni</button>
+            <!-- <button id="zamkniecie" class="zmiana">Zamknij</button> -->
+            <button id="prawo" class="zmiana"> Następny--></button>
         </div>
     </div>
     <script src="libs/jQuery.js"></script>
     <script src="libs/jQuery_UI.js"></script>
-    <!-- <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
     <script src="script.js"></script>
 </body>
 </html>
