@@ -42,6 +42,6 @@ $(document).ready(function() {
 
     $("#turn").on("click", function() {
         const angle = +box.getRotateAngle();
-        box.rotate(angle + 30);
+        box.rotate(angle + 90);
     });
 });
