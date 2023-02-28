@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #zdjecia, #zdjecie{
+            width: 100%;
+            text-align: center;
+        }
+        .gablota{
+            width: 16%;
+        }
+        .zmiana{
+            height: 100%;
+        }
+        #wybraneZdjecie {
+            position: relative;
+            top: 0;
+
+        }
+        #disabling {
+            position: absolute;
+            width: 50px;
+        }
+
+        #parent {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        #wybraneZdjecie {
+            position: relative;
+            top: 0;
+            left: 0;
+            /* border: 1px red solid; */
+        }
+        #disabling {
+            /* text-align: center; */
+            position: absolute;
+            top: 540px;
+            left: 48.3%;
+            /* border: 1px green solid; */
+        }
+    </style>
+
+</head>
+<body>
+    <div id="zdjecia">
+        <img src="images/zdj1.jpg" alt="zdj1" class="gablota">
+        <img src="images/zdj2.jpg" alt="zdj2" class="gablota">
+        <img src="images/zdj3.jpg" alt="zdj3" class="gablota">
+        <img src="images/zdj4.jpg" alt="zdj4" class="gablota">
+        <img src="images/zdj5.jpg" alt="zdj5" class="gablota">
+        <img src="images/zdj6.jpg" alt="zdj6" class="gablota">
+    </div>
+    <div id="zdjecie" hidden>
+        <div id="parent">
+            <img src="images/zdj1.jpg" alt="zdjecie" id="wybraneZdjecie">
+            <img src="images/X.png" alt="" id="disabling">
+
+        </div>
+        <div id="zmienianie">
+            <button id="lewo" class="zmiana"><-- Poprzedni</button>
+            <!-- <button id="zamkniecie" class="zmiana">Zamknij</button> -->
+            <button id="prawo" class="zmiana"> Następny--></button>
+        </div>
+    </div>
+    <script src="libs/jQuery.js"></script>
+    <script src="libs/jQuery_UI.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

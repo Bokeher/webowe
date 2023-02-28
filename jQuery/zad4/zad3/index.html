@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+        #btns{
+            margin: 10px;
+        }
+        #box{
+            width: 40px;
+            height: 40px;
+            background-color: red;
+            margin-left: auto;
+            margin-right: auto;
+            transition: 200ms ease all;
+            /* position: absolute; */
+        }
+
+    </style>
+    <script src="libs/jQuery.js" defer></script>
+    <script src="libs/jQuery_rotate.js" defer></script>
+    <script src="script.js" defer></script>    
+</head>
+<body>
+    <div id="btns">
+        <button id="turn">Obrót</button>
+        <button class="moveBox" id="1u">W górę</button>
+        <button class="moveBox" id="2r">W prawo</button>
+        <button class="moveBox" id="3d">W dół</button>
+        <button class="moveBox" id="4l">W lewo</button>
+    </div>
+
+    <div id="box"></div>
+</body>
+</html>

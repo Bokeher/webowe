@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 15px;
+            background: #3f3f3f;
+            color: white;
+        }
+        table, td , th{
+            border: 1px solid white;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        #srednia, #oceny {
+            float: left;
+        }
+        #srednia {
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+    </style>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div id="zad1">
+        <h1>Część 1</h1>
+        Podaj ilość ocen: <input type="number" min="1" id="zad1Input">
+        <button onclick="zad1()">Losuj</button>
+        <table id="tabZad1">
+            
+        </table>
+    </div>
+    <div id="zad2">
+        <h1>Część 2</h1>
+        <table id="tabZad2">
+            
+        </table>
+        Średnia ważona: <span id="sredniaZad2"></span>
+
+    </div>
+    <div id="zad3">
+        <h1>Część 3</h1>
+        <table id="oceny">
+            <tr>
+                <th>Przedmiot</th>
+                <th>Kategoria</th>
+                <th>Waga</th>
+                <th>Ocena</th>
+            </tr>
+        </table>
+        <table id="srednia">
+            <tr>
+                <th>Przedmiot</th>
+                <th>Średnia</th>
+            </tr>
+        </table>
+        <div>
+            Średnia z wszystkich przedmiotów: <span id="sredniaWszystkich"></span>
+        </div>
+    </div>
+</body>
+</html>
